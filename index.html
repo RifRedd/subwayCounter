@@ -4,10 +4,34 @@
         <title>Subway Counter</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
+        <script src="index.js"></script>
     </head>
     <body>
-        <h1>People Entered;</h1>
-        <h2 id="count-el">0</h2>
-        <script src="index.js"></script>
+      <div class="master-flex">
+        <div class="header">
+            <div class="h-logo">Logo</div>
+            <div class="other-pages">
+                <div class="link one" >Contact Me</div>
+                <div class="link two">About</div>
+                <div class="link three">Projects</div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="p-title">People Entered;</div>
+            <div class="count">
+                <div id="count-el">0</div>
+            </div>
+            <div class="btn">
+                <button id="increment-btn" onclick="increment()">Increase</button>
+            </div>
+            <div class="btn">
+                <button id="save-btn" onclick = "save()">Save</button>
+            </div>
+            <div class = "save-tab">
+                <p>Previous Entries</p></div>
+                <p class="savers">-</p>
+        </div>
+        
+      </div>
     </body>
 </html>
